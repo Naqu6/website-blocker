@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Website blocker",
+  "description": "Blocker",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+        "js": [
+          "scripts/blocker.js"
+        ],
+        "matches": [
+          "https://*.facebook.com/",
+          "https://facebook.com/",
+          "https://*.reddit.com/*",
+          "https://reddit.com/*",
+          "https://youtube.com/*",
+          "https://*.youtube.com/*"
+        ]
+      }, {
+        "js": [
+          "scripts/linkedin.js"
+        ],
+        "matches": [
+          "https://*.linkedin.com/*",
+          "https://*.linkedin.ca/*"
+        ]
+      }
+    ]
+}
